@@ -24,7 +24,6 @@
 - **Early Termination:** Leveraging list order to halt recursive search early in `exists` and `count` significantly improves performance for non-existent or out-of-range queries.
 
 ## How to run
--## How to Run
 
 Run the following commands in your terminal:
 
