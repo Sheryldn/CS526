@@ -1,5 +1,5 @@
 ## Introduction
-### This repository contains the solution for CS526 Homework 2, covering singly linked lists with tail pointers, pure recursive algorithms, and sorted doubly linked lists.
+- This repository contains the solution for CS526 Homework 2, covering singly linked lists with tail pointers, pure recursive algorithms, and sorted doubly linked lists.
 
 ## Algorithm
 
@@ -28,8 +28,8 @@
 Run the following commands in your terminal:
 
 -problem 2:
-  python3 problem2_driver.py < test.txt
+-python3 problem2_driver.py < test.txt
 -problem 3:
-  python3 problem3.py
+-python3 problem3.py
 -problem 4:
-  python3 problem4_driver.py
+-python3 problem4_driver.py
