@@ -4,8 +4,6 @@ def ways(n):
     if n<0:
         return 0
     return ways(n-1)+ways(n-2)+ways(n-3)
-
-    
 def show_ways(n,path=""):
     if n==0:
         print(path)

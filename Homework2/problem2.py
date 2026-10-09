@@ -68,13 +68,13 @@ class SinglyLinkedList:
             current = current.next
         return False
 
-    def _len_(self):
-        count = 0
-        current = self.head
-        while current:
-            count += 1
-            current = current.next
-        return count
+    def __len__(self):
+        def _count_nodes(node):
+            if node is None:
+                return 0
+            return 1 + _count_nodes(node.next)
+
+        return _count_nodes(self.head)
 
     def update(self, index, value):
         if index < 0 or index >= self.count:
