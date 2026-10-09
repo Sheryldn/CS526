@@ -20,3 +20,22 @@ def process_palindromes(filename):
 
 # Example usage:
 # process_palindromes('input.txt')
+
+
+# Driver
+
+import sys
+import os
+
+
+if __name__ == '__main__':
+    # Use the filename from command-line arguments if provided; default to 'input.txt'
+    if len(sys.argv) > 1:
+        test_file = sys.argv[1]
+    else:
+        test_file = 'input.txt'
+
+    if os.path.exists(test_file):
+        process_palindromes(test_file)
+    else:
+        print(f"Error: Test file not found: {test_file}")
