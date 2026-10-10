@@ -1,6 +1,3 @@
-# =====================================================================
-# 1. 基于数组实现的栈 (Array-based Stack)
-# =====================================================================
 class ArrayStack:
     def __init__(self):
         self.items = []
@@ -18,7 +15,6 @@ class ArrayStack:
         return len(self.items) == 0
 
     def reverse(self):
-        """使用递归原地翻转数组栈（无循环）"""
         def _rec_swap(left, right):
             if left >= right:
                 return
@@ -28,13 +24,10 @@ class ArrayStack:
         _rec_swap(0, len(self.items) - 1)
 
     def __str__(self):
-        # 栈底到栈顶输出
+        
         return ", ".join(map(str, self.items))
 
 
-# =====================================================================
-# 2. 基于单链表实现的栈 (Singly Linked List Stack)
-# =====================================================================
 class Node:
     def __init__(self, val):
         self.val = val
@@ -62,7 +55,6 @@ class SinglyLinkedListStack:
         return self.top_node is None
 
     def reverse(self):
-        """使用递归原地翻转单链表节点指针（无循环）"""
         def _rec_reverse(curr, prev):
             if curr is None:
                 return prev
@@ -73,7 +65,6 @@ class SinglyLinkedListStack:
         self.top_node = _rec_reverse(self.top_node, None)
 
     def __str__(self):
-        """递归生成从栈底到栈顶的字符串表示（无循环）"""
         def _to_list_rec(node):
             if node is None:
                 return []
@@ -82,9 +73,7 @@ class SinglyLinkedListStack:
         return ", ".join(_to_list_rec(self.top_node))
 
 
-# =====================================================================
-# 3. 基于双链表实现的栈 (Doubly Linked List Stack)
-# =====================================================================
+
 class DNode:
     def __init__(self, val):
         self.val = val
@@ -117,13 +106,11 @@ class DoublyLinkedListStack:
         return self.top_node is None
 
     def reverse(self):
-        """使用递归原地交换双链表节点的 prev 和 next 指针（无循环）"""
         def _rec_reverse(curr):
             if curr is None:
                 return None
-            # 交换前后指针
+            
             curr.prev, curr.next = curr.next, curr.prev
-            # 如果原 next (交换后的 prev) 为空，说明到达原链表尾部，即新头节点
             if curr.prev is None:
                 return curr
             return _rec_reverse(curr.prev)
@@ -131,7 +118,6 @@ class DoublyLinkedListStack:
         self.top_node = _rec_reverse(self.top_node)
 
     def __str__(self):
-        """递归生成从栈底到栈顶的字符串表示（无循环）"""
         def _to_list_rec(node):
             if node is None:
                 return []
@@ -140,14 +126,11 @@ class DoublyLinkedListStack:
         return ", ".join(_to_list_rec(self.top_node))
 
 
-# =====================================================================
-# Driver 测试代码
-# =====================================================================
 def run_test(stack_class, name):
     print(f"=== {name} ===")
     stack = stack_class()
     
-    # 压入 1 到 10
+    
     for i in range(1, 11):
         stack.push(i)
 

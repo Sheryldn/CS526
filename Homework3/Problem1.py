@@ -18,8 +18,6 @@ def process_palindromes(filename):
     
     print(total_palindromes)
 
-# Example usage:
-# process_palindromes('input.txt')
 
 
 # Driver
