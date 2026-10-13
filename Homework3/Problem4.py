@@ -38,7 +38,7 @@ def check_ghostbusters():
 
         dir_vec = (dx, dy)
 
-        
+        c = dy * x1 - dx * y1
 
         directions.append(dir_vec)
         c_constants.append(c)
