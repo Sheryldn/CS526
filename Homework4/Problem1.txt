@@ -1,0 +1,10 @@
+# Problem1
+
+## Preorder Traversal：A, B, E, H, F, I, C, D, G
+## Breadth-First Traversal： A, B, C, D, E, F, G, H, I
+## In-order Traversal:A, B, C, D, E, F, G, H, I
+## Postorder Traversal:H, E, I, F, B, C, G, D, A
+
+
+
+
