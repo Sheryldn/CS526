@@ -4,7 +4,7 @@
 
 
 ## To run using standard input redirect:
-## python puzzle.py < puzzle_game_input1.txt
+## python Problem3.py < puzzle_game_input1.txt
 
 # To run using a file name passed via command line:
-## python puzzle.py puzzle_game_input1.txt   
+## python Problem3.py puzzle_game_input1.txt   

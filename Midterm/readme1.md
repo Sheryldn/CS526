@@ -4,7 +4,7 @@
 
 
 # To run using standard input redirect:
-## python snowfall.py < snowfall_input1.txt
+## python Problem1.py < snowfall_input1.txt
 
 # To run using a file name passed via command line:
-## python snowfall.py snowfall_input1.txt
+## python Problem1.py snowfall_input1.txt
