@@ -1,6 +1,6 @@
 import os
 
-# Morse code dictionary mapping for Vowels
+
 VOWEL_MAP = {
     'A': '.-',
     'E': '.',
@@ -26,7 +26,7 @@ def count_vowel_combinations(sequence: str) -> int:
     return dp[0]
 
 def main():
-    # Process files 1 through 4 automatically
+    
     for file_num in range(1, 5):
         file_name = f"vowel_input{file_num}.txt"
         
@@ -35,11 +35,11 @@ def main():
                 sequence = f.read().strip()
                 total_ways = count_vowel_combinations(sequence)
                 
-                # Output formatted strictly as required by the specification
+                
                 print(f"File Input: {file_name}")
                 print("The Number of Vowel combinations is:")
                 print(total_ways)
-                print()  # Empty line for separation
+                print()  
         else:
             print(f"File Input: {file_name} (File not found)")
             print()
