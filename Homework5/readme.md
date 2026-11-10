@@ -1,4 +1,3 @@
-========================================================================
 How to Run the Programs:
    - Problem 1:
      python P3 problem1.py
